@@ -1,0 +1,16 @@
+五大布局：
+线性布局 LinearLayout
+相对布局 RelativeLayout
+绝对布局 AbsoluteLayout
+表格布局 TableLayout
+帧布局 FrameLayout
+
+Layout_weight  空间分配 权重，分割剩余空闲的空间。
+
+width = wrap_content 
+即：w(999999) + 1/2空闲空间 > w(888) + 1/2空闲空间。
+width = 0
+0 + 1/2空闲空间 = 0 +1/2空闲空间
+
+这是一个小技巧，也是非常实用的一个实用layout_weight分割方案：
+定义控件的 layout_width="0dp" 或 layout_height="0dp" 配上 layout_weight 就可以实现对整个空间的比例分割了。
